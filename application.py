@@ -19,4 +19,4 @@ def my_endpoint():
     # use the parameters in your code
     response = requests.get(url)
     # Print the content of the response
-    return response.content
+    return 'Hello World!'
