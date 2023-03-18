@@ -13,7 +13,7 @@ import requests
 app = Flask(__name__)
 
 @app.route('/')
-def my_endpoint():
+def index():
     url = request.args.get('url')
     param2 = request.args.get('param2')
     # use the parameters in your code
