@@ -12,9 +12,9 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/endpoint')
+@app.route('/')
 def my_endpoint():
-    url = request.args.get('param1')
+    url = request.args.get('url')
     param2 = request.args.get('param2')
     # use the parameters in your code
     response = requests.get(url)
