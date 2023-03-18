@@ -7,7 +7,6 @@ Created on Sat Mar 18 09:55:10 2023
 """
 
 from flask import Flask, request
-import requests
 
 
 app = Flask(__name__)
@@ -17,6 +16,6 @@ def index():
     url = request.args.get('url')
     param2 = request.args.get('param2')
     # use the parameters in your code
-    response = requests.get(url)
+    response = request.get(url)
     # Print the content of the response
     return 'Hello World!'
