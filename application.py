@@ -9,9 +9,9 @@ Created on Sat Mar 18 09:55:10 2023
 from flask import Flask, request
 
 
-app = Flask(__name__)
+application = Flask(__name__)
 
-@app.route('/')
+@application.route('/')
 def index():
     url = request.args.get('url')
     param2 = request.args.get('param2')
