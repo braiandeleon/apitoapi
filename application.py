@@ -19,3 +19,6 @@ def index():
     response = request.get(url)
     # Print the content of the response
     return 'Hello World!'
+
+if __name__ == '__main__':
+    application.run(debug=True)
